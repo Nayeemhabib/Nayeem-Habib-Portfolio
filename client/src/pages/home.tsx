@@ -256,7 +256,7 @@ function Navbar() {
             </Button>
           </a>
           <a
-            href="https://github.com/heba-alazzeh"
+            href="https://github.com/hebaalazzeh"
             target="_blank"
             rel="noopener noreferrer"
             data-testid="link-github-nav"
@@ -1532,7 +1532,7 @@ function ContactSection() {
           </Button>
         </a>
         <a
-          href="https://github.com/heba-alazzeh"
+          href="https://github.com/hebaalazzeh"
           target="_blank"
           rel="noopener noreferrer"
           data-testid="link-contact-github"

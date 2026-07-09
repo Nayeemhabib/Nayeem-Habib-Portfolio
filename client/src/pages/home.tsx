@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import hebaPhoto from "@assets/Screenshot_2026-02-21_at_8.21.42_PM_1771734328894.png";
+import nayeemPhoto from "../../../attached_assets/nayeemPhoto.jpg";
 import {
   MapPin,
   GraduationCap,
@@ -35,6 +35,8 @@ import {
   SiNvidia,
   SiMongodb,
   SiSalesforce,
+  SiYoutube,
+  SiX,
 } from "react-icons/si";
 
 function ArabesqueDecoration({ className }: { className?: string }) {
@@ -205,8 +207,8 @@ function Navbar() {
     { label: "Experience", href: "#experience" },
     { label: "Research", href: "#research" },
     { label: "Projects", href: "#projects" },
-    { label: "Leadership", href: "#leadership" },
     { label: "Skills", href: "#skills" },
+    { label: "Leadership", href: "#leadership" },
     { label: "Certifications", href: "#certifications" },
     { label: "Contact", href: "#contact" },
   ];
@@ -229,7 +231,7 @@ function Navbar() {
           className="font-serif text-xl font-bold text-primary"
           data-testid="link-logo"
         >
-          H.A.
+          N.H.
         </a>
         <div className="hidden md:flex items-center gap-1">
           {links.map((link) => (
@@ -245,7 +247,7 @@ function Navbar() {
         </div>
         <div className="flex items-center gap-2">
           <a
-            href="https://www.linkedin.com/in/heba-alazzeh/"
+            href="https://www.linkedin.com/in/nayeemhabib12/"
             target="_blank"
             rel="noopener noreferrer"
             data-testid="link-linkedin-nav"
@@ -256,7 +258,7 @@ function Navbar() {
             </Button>
           </a>
           <a
-            href="https://github.com/hebaalazzeh"
+            href="https://github.com/Nayeemhabib"
             target="_blank"
             rel="noopener noreferrer"
             data-testid="link-github-nav"
@@ -266,7 +268,39 @@ function Navbar() {
               <SiGithub className="w-4 h-4" />
             </Button>
           </a>
-
+          <a
+            href="https://www.youtube.com/@Nayeemhabib12"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="link-youtube-nav"
+            aria-label="YouTube profile"
+          >
+            <Button size="icon" variant="ghost" aria-label="YouTube">
+              <SiYoutube className="w-4 h-4" />
+            </Button>
+          </a>
+          <a
+            href="https://x.com/NayeemHabib12"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="link-x-nav"
+            aria-label="X profile"
+          >
+            <Button size="icon" variant="ghost" aria-label="X">
+              <SiX className="w-4 h-4" />
+            </Button>
+          </a>
+          <a
+           href="/NayeemHabib.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-testid="link-resume-nav"
+           aria-label="Resume"
+        >
+          <Button size="sm" variant="outline">
+            My Resume
+         </Button>
+</a>
           <div className="md:hidden relative">
             <Button
               size="icon"
@@ -355,7 +389,7 @@ function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           data-testid="text-hero-subtitle"
         >
-          Software Engineer & AI Researcher
+          Hardware Engineer & Hardware Researcher.
         </motion.p>
 
         <motion.h1
@@ -365,7 +399,7 @@ function HeroSection() {
           transition={{ duration: 0.8, delay: 0.5 }}
           data-testid="text-hero-name"
         >
-          Heba Alazzeh
+          Nayeem Habib.
         </motion.h1>
 
         <motion.div
@@ -376,12 +410,12 @@ function HeroSection() {
         >
           <GraduationCap className="w-4 h-4" />
           <span className="text-sm md:text-base font-sans">
-            UC Berkeley Computer Science
+            NIT Trichy Electrical and Electronics Engineering
           </span>
           <span className="mx-2 text-primary">|</span>
           <MapPin className="w-4 h-4" />
           <span className="text-sm md:text-base font-sans">
-            San Francisco Bay Area
+            Tiruchirappalli, Tamil Nadu, India.
           </span>
         </motion.div>
 
@@ -391,7 +425,7 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          {["Snap Inc.", "Stanford", "Uber"].map((company) => (
+          {["NIT Trichy", "IIT Madras", "IIT Bombay","IIT Delhi", "IISC Bangalore"].map((company) => (
             <Badge
               key={company}
               variant="outline"
@@ -515,15 +549,16 @@ function AboutSection() {
           transition={{ duration: 0.6 }}
         >
           <img
-            src={hebaPhoto}
-            alt="Heba Alazzeh"
+            src={nayeemPhoto}
+            alt="Nayeem Habib"
             className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover object-[center_20%] border-4 border-primary/30 shadow-lg shadow-primary/10"
             data-testid="img-about-photo"
           />
         </motion.div>
         <div className="space-y-4 text-center md:text-left">
           <p className="text-lg leading-relaxed text-foreground/90" data-testid="text-about-intro">
-            Hi, my name is Heba, and I am a Computer Science student at UC Berkeley. I am passionate about building accessible, impactful technology and using software to solve real-world problems. I am driven by a desire to build technology that empowers people and communities, grounded in hands-on technical experience and collaborative problem-solving.
+            Hi, I'm Nayeem Habib, an Electrical and Electronics Engineering graduate from NIT Trichy with a strong passion for Digital ASIC Design & Verification, RTL Design, FPGA Development, and Computer Architecture. My interests lie in designing efficient digital systems from microarchitecture to synthesizable RTL, with a focus on functional correctness, timing awareness, pipelining, clock/reset design, and PPA optimization. I have a solid foundation in Digital Logic Design, Computer Architecture, Verilog/SystemVerilog, Functional Verification, and FPGA-based design. My technical experience includes research internships at IIT Bombay and IIT Madras, where I worked on hardware design and simulation. I am eager to contribute as an RTL Design, Digital ASIC Design, or Verification Engineer while continuously learning and building high-performance semiconductor solutions.
+
           </p>
         </div>
       </div>
@@ -544,49 +579,52 @@ function AboutSection() {
 
 const experiences = [
   {
-    company: "Snap Inc. (Snapchat)",
-    role: "Snap Lens Academy Intern",
-    period: "June 2025 - August 2025",
-    icon: SiSnapchat,
+    company: "Carrier Break (Part Time Physics and Mathamatics Tutor)",
+    role: "Physics and Math Tutor",
+    period: "Jan 2024 - Dec 2025",
+    icon: Code2,
     color: "text-yellow-500 dark:text-yellow-400",
     description: [
-      "Developed and deployed 30+ Augmented Reality experiences using JavaScript and Lens Studio's API framework, reaching 4M+ global users.",
-      "Selected as 1 of 15 from 300+ applicants for Snap's AR/VR engineering academy.",
-      "Delivered 10+ live demos to Snap's CEO, CTO, and engineering teams. Featured in CEO Evan Spiegel's post.",
+      "Prepared for the UPSC exam with Electrical Engineering (EEE) as my optional subject.",
+      "Strengthened core concepts in Power Systems, Control Systems, Machines, and Analog and Digital Electronics.",
+      "Developed strong analytical, time management, and self-discipline skills.",
     ],
-    tags: ["JavaScript", "AR/VR", "Lens Studio", "3D"],
-    link: "https://www.linkedin.com/posts/evan-spiegel-8ab74034a_had-the-chance-to-spend-time-with-our-2025-ugcPost-7353849073591828481-ISRn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWocqAB-vq1GdYbtn4iRQmwvxl2OQZ_EBU",
-    linkLabel: "Evan Spiegel's Post",
+    tags: ["Leadership", "Analytical Thinking", "Time Management", "Self-Discipline"],
   },
   {
-    company: "Uber",
-    role: "Software Engineer Fellow",
-    period: "December 2024 - August 2025",
-    icon: SiUber,
+    company: "IIT Madras",
+    role: "Research Fellow Intern",
+    period: "May 2022 - July 2022",
+    icon: Code2,
     color: "text-foreground",
     description: [
-      "Selected as 1 of 50 from 2,000+ applicants globally (top 3%) for Uber's international Career Prep Program.",
-      "Solved 50+ advanced algorithmic challenges covering graph traversal, backtracking, greedy, and dynamic programming.",
-      "Strengthened system design fundamentals combining Big-O analysis with API modeling and distributed scalability strategies.",
+      "Implemented the Particle Swarm Optimization algorithm in Verilog, achieving a processing speed of 30 percent compared to previous implementations and yielding insights for future optimization projects.",
+      "Analyze three Verilog modules to display a specific 16-bit floating-point number on the FPGA board.",
+      "Used Matlab, C++, FPGA Board for Project.",
     ],
-    tags: ["Algorithms", "System Design", "API Modeling"],
+    tags: ["C++", "FPGA", "Verilog", "Matlab", "Particle Swarm Optimization"],
+    link: "https://drive.google.com/file/d/1IY2ZNuiPgfB00Rwg7t5fK5xEUal-UKCu/view?usp=sharing",
+    linkLabel: "IIT Madras Research Project Report.",
   },
   {
-    company: "Kodely",
-    role: "Software Engineer Intern",
-    period: "June 2024 - January 2025",
+    company: "National Institute of Technology, Tiruchirappalli",
+    role: "Research Engineer Intern",
+    period: "May 2021 - July 2021",
     icon: Code2,
     color: "text-emerald-500 dark:text-emerald-400",
     description: [
-      "Developed responsive enrichment program platform for K-12 districts using Astro, React, Tailwind CSS, and Firebase, driving a 75% increase in student engagement.",
-      "Optimized web performance via code-splitting, lazy loading, and SSR, reducing page load times by 40%.",
+      "Developed a MultiFace LIPSYN Simulation Model using deep learning.",
+      "Used Speaker Diarization, Face Detection and Recognition, Lip Synchronization Smoothing and Super Resolution using GFPGAN.",
+      "Used DeepFilterNet, CNN, TensorFlow, Keras, PyTorch and NumPy."
     ],
-    tags: ["React", "Astro", "Firebase", "Tailwind CSS"],
+    tags: ["Python", "CNN", "DeepFilterNet", "TensorFlow", "Keras", "PyTorch", "NumPy", "Deep Learning", "Computer Vision"],
+    link: "https://drive.google.com/file/d/1OXvvZZMzOhnYyu6mZsV9QGRnVi5kQTTi/view?usp=sharing",
+    linkLabel: "NIT Tiruchirappalli Research Internship Report.",
   },
   {
     company: "SMCCCD",
     role: "Web Services Intern",
-    period: "October 2024 - May 2025",
+    period: "October 2020 - May 2020",
     icon: Code2,
     color: "text-sky-500 dark:text-sky-400",
     description: [
@@ -595,18 +633,6 @@ const experiences = [
       "Troubleshot and resolved web-related issues, supporting district-wide web applications and third-party software integration.",
     ],
     tags: ["JavaScript", "Python", "HTML/CSS", "Web Development"],
-  },
-  {
-    company: "Tessellations School",
-    role: "Software Engineer Intern",
-    period: "December 2023 - March 2024",
-    icon: Code2,
-    color: "text-violet-500 dark:text-violet-400",
-    description: [
-      "Developed a Python/Raspberry Pi network monitoring system to detect HTTP connectivity issues with real-time LED indicators via GPIO pins.",
-      "Built an automated attendance system using SikuliX image recognition and Python, integrating with existing school management systems.",
-    ],
-    tags: ["Python", "Raspberry Pi", "SikuliX", "Automation"],
   },
 ];
 
@@ -816,48 +842,163 @@ function ResearchSection() {
   );
 }
 
+
+const skillCategories = [
+  {
+    title: " Hardware Description & Verification Languages",
+    skills: [
+      "C++",
+      "Python",
+      "Java",
+      "Verilog",
+      "VHDL",
+      "SystemVerilog",
+      "VHDL",
+      "JavaScript",
+      "HTML/CSS",
+      "LaTeX",
+      "MatLab",
+    ],
+  },
+    {
+    title: "EDA Tools & Simulation",
+    skills: [
+      "Cadence Virtuoso",
+      "Synopsys Design Compiler",
+      "Synopsys VCS",
+      "Xilinx Vivado",
+      "Matlab",
+      "LaTe",
+      "LTSpice",
+      "Simulink",
+    ],
+  },
+  {
+    title: "Frameworks",
+    skills: [
+      "React",
+      "Node.js",
+      "Next.js",
+      "WordPress",
+      "GraphQL",
+      "Django",
+      "Flask",
+      "Express.js",
+    ],
+  },
+  {
+    title: "Developer Tools",
+    skills: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Docker",
+      "Kubernetes",
+      "VS Code",
+    ],
+  },
+  {
+    title: "Libraries",
+    skills: [
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Mayavi",
+      "SciPy",
+      "Seaborn",
+      "OpenCV",
+      "TensorFlow",
+      "Keras",
+      "PyTorch",
+    ],
+  },
+  {
+    title: "Databases",
+    skills: ["PostgreSQL", "MySQL", "Firebase", "SQLite"],
+  },
+];
+
+function SkillsSection() {
+  return (
+    <AnimatedSection
+      id="skills"
+      className="py-14 px-4 sm:px-6 max-w-6xl mx-auto"
+    >
+      <SectionHeading title="Technical Skills" icon={Code2} />
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {skillCategories.map((category, idx) => (
+          <motion.div
+            key={category.title}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: idx * 0.1 }}
+          >
+            <Card
+              className="p-5"
+              data-testid={`card-skills-${category.title.toLowerCase().replace(/\s+/g, "-")}`}
+            >
+              <h3 className="font-serif text-lg font-bold mb-3 text-primary">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap gap-1.5">
+                {category.skills.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="text-xs">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </Card>
+          </motion.div>
+        ))}
+      </div>
+    </AnimatedSection>
+  );
+}
+
+const educationData = [
+  {
+    school: "National Institute of Technology, Tiruchirappalli",
+    degree: "B.Tech, Electrical and Electronics Engineering",
+    period: "Aug 2019 - June 2023",
+    cgpa: "7.2/10.0",
+    testId: "card-education-nittrichy",
+  },
+  {
+    school: "Govt Boys Higher Secondary School Baramulla, Jmmu & Kashmir",
+    degree: "Associate of Science — English, Physics, Chemistry, Geology and Mathematics",
+    period: "June 2016 - May 2018",
+    cgpa: "8.6/10.0",
+    testId: "card-education-csm",
+  },
+];
+
+
 const leadershipItems = [
   {
-    title: "Stanford SERIS Scholar",
-    org: "Stanford University School of Engineering",
-    period: "Dec 2024 - Feb 2026",
-    description: "Competitively selected 1 of 23 undergraduates across the U.S. for Stanford's Engineering Research Introductions Scholar program. Engaged with world-class researchers and faculty in immersive workshops.",
+    title: "Tronix 3D Aeronautics Researcher.",
+    org: "National Institute of Technology, Tiruchirappalli (NIT Trichy)",
+    period: "Dec 2020 - Jun 2023",
+    description: "Competitively selected 1 of 1200 undergraduates across the NIT Trichy for Tronix 3D Research Introductions Scholar program. Engaged with Best researchers and faculty in immersive workshops.",
   },
   {
-    title: "Break Through Tech AI Fellow",
-    org: "Break Through Tech (Cornell University)",
-    period: "Mar 2025 - Jun 2025",
-    description: "Selected as one of 1,000 fellows nationwide for a rigorous AI/ML program. Completed Machine Learning Foundations coursework and AI Studio projects with real-world datasets.",
+    title: "Currents —  President",
+    org: "National Institute of Technology, Tiruchirappalli (NIT Trichy)",
+    period: "Apr 2020 - May 2023",
+    description: "President and led the Currents Club, organizing Hardware coding workshops, guest speaker events, and community outreach to promote diversity and inclusion in STEM.",
   },
   {
-    title: "Girls Who Code Club — Founder & President",
-    org: "College of San Mateo",
-    period: "Apr 2024 - May 2025",
-    description: "Founded and led the CSM Girls Who Code Club, organizing coding workshops, guest speaker events, and community outreach to promote diversity and inclusion in STEM.",
-  },
-  {
-    title: "CS Club Vice President & AI Club Marketing Manager",
-    org: "College of San Mateo",
-    period: "Jan 2024 - May 2025",
+    title: "EEE Association Club NIT Trichy Vice President & Club Marketing Manager",
+    org: "National Institute of Technology, Tiruchirappalli (NIT Trichy)",
+    period: "Jan 2020 - May 2023",
     description: "Led digital strategies to amplify presence within the tech community. Curated compelling content and fostered meaningful connections with students, faculty, and industry professionals.",
   },
   {
-    title: "Experience Berkeley Transfer Ambassador Intern",
-    org: "Stiles Hall / UC Berkeley",
-    period: "Aug 2025 - Dec 2025",
-    description: "Mentored community college transfer students through the UC application process. Provided feedback on Personal Insight Questions and hosted advising sessions via Zoom.",
-  },
-  {
-    title: "Kodely — Operations Coordinator & Lead Instructor",
-    org: "Kodely",
+    title: "12th Class — Operations Coordinator & Lead Instructor",
+    org: "Govt Boys High School Baramulla, Jammu and Kashmir, India",
     period: "Dec 2023 - Jan 2025",
     description: "Developed and delivered STEM lessons covering UX/UI design, coding (Python beginner to advanced), game design, app design, and circuit design for K-12 students.",
-  },
-  {
-    title: "ColorStack x Reboot Scholar — GDC (2x)",
-    org: "Game Developers Conference",
-    period: "Mar 2025 - Present",
-    description: "Selected as a scholarship recipient to attend the 2025 & 2026 Game Developers Conference in San Francisco for industry networking and professional development.",
   },
   {
     title: "Harvard WECode Tech Fellow",
@@ -970,126 +1111,10 @@ function LeadershipSection() {
   );
 }
 
-const skillCategories = [
-  {
-    title: "Languages",
-    skills: [
-      "Java",
-      "Python",
-      "C++",
-      "SQL",
-      "JavaScript",
-      "TypeScript",
-      "PHP",
-      "HTML/CSS",
-      "Julia",
-      "LaTeX",
-      "MatLab",
-      "LangChain",
-    ],
-  },
-  {
-    title: "Frameworks",
-    skills: [
-      "React",
-      "Node.js",
-      "Next.js",
-      "WordPress",
-      "GraphQL",
-      "Django",
-      "Flask",
-      "Express.js",
-    ],
-  },
-  {
-    title: "Developer Tools",
-    skills: [
-      "Git",
-      "GitHub",
-      "GitLab",
-      "Docker",
-      "Kubernetes",
-      "VS Code",
-      "JIRA",
-    ],
-  },
-  {
-    title: "Libraries",
-    skills: [
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Mayavi",
-      "SciPy",
-      "Seaborn",
-      "OpenAI API",
-    ],
-  },
-  {
-    title: "Databases",
-    skills: ["PostgreSQL", "MySQL", "Firebase", "SQLite"],
-  },
-];
 
-function SkillsSection() {
-  return (
-    <AnimatedSection
-      id="skills"
-      className="py-14 px-4 sm:px-6 max-w-6xl mx-auto"
-    >
-      <SectionHeading title="Technical Skills" icon={Code2} />
-
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {skillCategories.map((category, idx) => (
-          <motion.div
-            key={category.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: idx * 0.1 }}
-          >
-            <Card
-              className="p-5"
-              data-testid={`card-skills-${category.title.toLowerCase().replace(/\s+/g, "-")}`}
-            >
-              <h3 className="font-serif text-lg font-bold mb-3 text-primary">
-                {category.title}
-              </h3>
-              <div className="flex flex-wrap gap-1.5">
-                {category.skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="text-xs">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
-          </motion.div>
-        ))}
-      </div>
-    </AnimatedSection>
-  );
-}
-
-const educationData = [
-  {
-    school: "University of California, Berkeley",
-    degree: "Bachelor of Arts, Computer Science",
-    period: "May 2025 - May 2027",
-    gpa: "4.0",
-    testId: "card-education-berkeley",
-  },
-  {
-    school: "College of San Mateo",
-    degree: "Associate of Science — Computer Science, Physics, and Mathematics",
-    period: "June 2023 - May 2025",
-    gpa: "4.0",
-    honors: "Summa Cum Laude (3x)",
-    testId: "card-education-csm",
-  },
-];
 
 const relevantCoursework =
-  "Data Structures & Algorithms, Computer Architecture, Discrete Mathematics & Probability, Structure & Interpretation of Computer Programs, Designing Information Devices & Systems, Object Oriented Programming, Systems Programming, Software Engineering Methods, Linear Algebra, Calculus I–III, Physics I–II";
+  "Data Structures & Algorithms, Analog and Digital Electronics, Discrete Mathematics & Probability, VLSI, Power Electronics, Control Systems, Signal Processing, Signals and Systems, Computer Architecture, CMOS / VLSI Basics, Embedded Systems, Microprocessors, Power Systems, Electrical Machines, Electromagnetic Fields, Communication Systems, Electrical Measurements and Instrumentation.";
 
 function EducationSection() {
   return (
@@ -1117,14 +1142,9 @@ function EducationSection() {
                   </p>
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
-                  {edu.gpa && (
+                  {edu.cgpa && (
                     <Badge variant="default" className="text-xs">
-                      GPA: {edu.gpa}
-                    </Badge>
-                  )}
-                  {edu.honors && (
-                    <Badge variant="secondary" className="text-xs">
-                      {edu.honors}
+                      CGPA: {edu.cgpa}
                     </Badge>
                   )}
                   <span className="text-xs text-muted-foreground whitespace-nowrap">
@@ -1159,88 +1179,56 @@ function EducationSection() {
 
 const projects = [
   {
-    title: "LeRAAT — Aviation AI Advisory Tool",
-    description:
-      "An LLM-powered real-time pilot assistant combining RAG with aircraft state awareness, trajectory prediction, and natural language interfaces. Presented to Airbus, NASA, and U.S. Air Force; undergoing in-flight testing.",
-    tags: ["Python", "LLM", "RAG", "XPlane", "OpenAI API"],
-    link: "https://github.com/sisl/LeRAAT",
+    title: "TRAFFIC LIGHT MANAGEMENT USING AI",
+    description:[
+      "Developed a Simulation model of traffic light control system using AI With accuracy to 99 Percent.",
+      "Utilized computer vision techniques to determine time limits on roads. Used Python, Image Processing, Object Detection and TensorFlow.",
+    ],
+    tags: ["Python", "AI", "Computer Vision", "Image Processing", "TensorFlow"],
+    link: "https://github.com/Nayeemhabib/Traffic-Light-Management-Using-AI",
     linkLabel: "GitHub",
   },
   {
-    title: "Syllabus Seeker",
-    description:
-      "A modern web app helping students search, share, and access course syllabi with fuzzy search, upload/preview, and dark/light mode. Built with Next.js, TypeScript, and PostgreSQL.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
-    link: "https://syllabus-seeker.vercel.app/",
-    linkLabel: "Live Site",
-  },
-  {
-    title: "Mingly — Social Networking App",
-    description:
-      "Led a team of 15 to build a social networking app for spontaneous, meaningful connections. Oversaw mobile and desktop development through the full SDLC in an agile environment.",
-    tags: ["SwiftUI", "Firebase", "Azure", ".NET", "Team Lead"],
-    link: "https://github.com/Mingley-AI/mingley-mvc-website",
+    title: "Face Recognition Biometric system",
+    description:[
+      " Developed a simulation model of face recognition biometric system. Used Python, Image Processing, Image Recognition, OpenCV, SciPy, SciKit.",
+    ],
+    tags: ["Python", "Computer Vision", "Image Processing", "OpenCV", "SciPy"],
+    link: "https://github.com/Nayeemhabib/Face_Recognition_Project",
     linkLabel: "GitHub",
   },
   {
-    title: "Crochet Of The Day Website",
+    title: "RLC filter Circuit Design and Analysis",
     description:
-      "A daily crochet pattern platform with user contributions, likes, accessible navigation, and community features. Full-stack with Django backend and interactive frontend.",
-    tags: ["Django", "JavaScript", "Full-Stack", "CSS", "API"],
-    link: "https://github.com/hebaalazzeh/Crochet-Of-The-Day-Website",
+      "Developed a simulation model of an RLC filter circuit using Python, achieving an accuracy of up to 98 Percent. Analyzed over 100 configurations of RLC circuits to identify the optimal configuration. Used Python, NumPy, Matplotlib and SciPy..",
+    tags: ["Python", "NumPy", "Matplotlib", "SciPy"],
+    link: "https://github.com/Nayeemhabib/Filter_Project",
     linkLabel: "GitHub",
   },
   {
-    title: "AI Chat With Websites",
+    title: "Digital-Signal-Sampling-and-Analysis",
     description:
-      "Conversational AI interface that lets users chat with any website using web scraping, LangChain, and OpenAI embeddings. Features context-aware responses and dynamic session management.",
-    tags: ["Python", "LangChain", "OpenAI", "Streamlit", "NLP"],
-  },
-  {
-    title: "Bulldog Bistro",
-    description:
-      "A Pygame game inspired by Diner Dash where players navigate a cafeteria as a mischievous mascot, stealing burgers in a 30-second time challenge. All art created by Heba.",
-    tags: ["Python", "Pygame", "Game Dev"],
-    link: "https://github.com/hebaalazzeh/Bulldog-Bistro",
+      "Simulated DSP concepts such as sampling, aliasing, DFT, and signal reconstruction using MATLAB. Analyzed spectral resolution, frequency spectrum, and interpolation techniques for discrete-time signals. Validated Nyquist-Shannon sampling theory through practical signal processing experiments.",
+
+    tags: ["C", "MATLAB", "Digital Signal Processing", "Signal Analysis", "Sampling Theory"],
+    link: "https://github.com/Nayeemhabib/Digital-Signal-Sampling-and-Analysis",
     linkLabel: "GitHub",
   },
-  {
-    title: "3D Geological Visualization Tool",
+    {
+    title: " VEHICLE TRACKING SYSTEM",
     description:
-      "Interactive 3D subsurface visualization tool using Python and Mayavi, enabling dynamic slicing, camera path rendering, and volumetric analysis of 10M+ voxel geological datasets.",
-    tags: ["Python", "Mayavi", "NumPy", "PyVista"],
-    link: "https://github.com/hebaalazzeh/Mineral-X-Subsurface-Vsualization-Tool",
+      "Developed a GPS tracker using Arduino to transmit location data to mobile devices via a GSM module; successfully tested on more then 10 devices, with reliable performance over a distance of up to 1 km. Used Arduino UNO, GSM Module, GPS Module, Power Supply,Connecting Wires..",
+    tags: ["Python", "Arduino", "GSM", "GPS", "Embedded Systems"],
+    link: "https://drive.google.com/file/d/1gFG2j1r95lRgZEo01tz8TKqjzIEvOSGE/view?usp=sharing",
+    linkLabel: "Project Report",
+  },
+  {
+    title: "SmartTix- AI Ticket System.",
+    description:
+      "Built a full-stack ticketing platform to streamline support ticket management with AI-powered analysis. Implemented asynchronous backend workflows with Node.js and Inngest for real-time AI feedback. Leveraged Google Gemini API to automatically prioritize and annotate tickets based on content and required skills. Developed a secure React frontend with JWT-protected routes, a dynamic admin panel, and role-based access.",
+    tags: ["Node.js", "React", "MongoDB", "Google Gemini API", "JWT Authentication", "Inngest"],
+    link: "https://github.com/Nayeemhabib/Smart-Ticket-An-AI-Ticket-System.",
     linkLabel: "GitHub",
-  },
-  {
-    title: "Computer Science Club Website",
-    description:
-      "Full-stack website featuring an AI chatbot, gallery, team section, initiatives page, and contact forms. Built for the CSM Computer Science Club.",
-    tags: ["JavaScript", "HTML/CSS", "AI Chatbot", "Full-Stack"],
-  },
-  {
-    title: "Girls Who Code Club Website",
-    description:
-      "Platform promoting diversity and inclusion in CS at College of San Mateo, featuring team profiles, events, membership signup, and contact forms with Bootstrap and Web3Forms.",
-    tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-  },
-  {
-    title: "Network Connectivity Monitor",
-    description:
-      "Raspberry Pi-based system using Python to monitor HTTP connections, detect network issues, and provide real-time LED indicators for network status using GPIO pins.",
-    tags: ["Python", "Raspberry Pi", "GPIO", "Networking"],
-  },
-  {
-    title: "K-12 STEM Enrichment Platform",
-    description:
-      "Responsive enrichment program platform for K-12 districts using Astro, React, Tailwind CSS, and Firebase, driving a 75% increase in student engagement.",
-    tags: ["React", "Astro", "Firebase", "Tailwind CSS"],
-  },
-  {
-    title: "Automated Attendance System",
-    description:
-      "Automated attendance system using SikuliX image recognition and Python to streamline after-school attendance, integrating with existing school management systems.",
-    tags: ["Python", "SikuliX", "Automation"],
   },
 ];
 
@@ -1325,25 +1313,25 @@ function ProjectsSection() {
 
 const recommendations = [
   {
-    name: "Sebrianne Ferguson",
-    title: "IT Web Services/Security @ SMCCCD | CompTIA Security+ Certified",
-    relationship: "Senior colleague at SMCCCD ITS",
+    name: "Dr. Aneesa Farhan M A.",
+    title: "Assistant Professor | National Institute of Technology, Tiruchirappalli.",
+    relationship: "Associated Professor at NIT Trichy.",
     quote:
-      "I had the pleasure of working with Heba when she was our student assistant at SMCCCD ITS. She is highly motivated, energetic and always open to learning new things and solving problems. Any task I gave her was completed cleanly, quickly and professionally. She has a very rare and inspiring aptitude to learn and grow, and I give her my highest recommendation.",
+      "I had the pleasure of working with Nayeem Habib when he was my student at National Institute of Technology, Tiruchirappalli. He is highly motivated, energetic and always open to learning new things and solving problems. Any task I gave him was completed cleanly, quickly and professionally. He has a very rare and inspiring aptitude to learn and grow, and I give him my highest recommendation.",
   },
   {
-    name: "Sri Narayanan",
-    title: "Founder of Kodely | Forbes 30u30",
-    relationship: "Direct manager at Kodely",
+    name: "Dr. Ankur Singh Rana.",
+    title: "Assistant Professor | National Institute of Technology, Tiruchirappalli.",
+    relationship: "Associated Professor at NIT Trichy.",
     quote:
-      "I am pleased to highly recommend Heba Alazzeh for any role in operations, logistics, or project management. Having worked closely with Heba in her role as Operations Coordinator at Kodely, I have seen firsthand her exceptional ability to think outside the box, solve complex challenges, and drive efficiency in fast-paced environments.",
+      "I am pleased to highly recommend Nayeem Habib for any role in Signals and Systems, Fuzzy Logic, Operation Coordinato or project management. Having worked closely with Nayeem in his role as Operations Coordinator at NIT Trichy, I have seen firsthand his exceptional ability to think outside the box, solve complex challenges, and drive efficiency in fast-paced environments.",
   },
   {
-    name: "Michael Fariss",
-    title: "Making IT more personable",
-    relationship: "Direct manager",
+    name: "Dr. Rajni Kant Mishra",
+    title: "PHD Scholar | National Institute of Technology, Tiruchirappalli.",
+    relationship: "PHD Scholar at NIT Trichy.",
     quote:
-      "Heba was great to work with and did a fantastic job with the programming projects that were assigned. Heba took the time to research possible solutions and implemented them cleanly. Additionally, when something needed clarification or a change to the design was needed Heba clearly communicated the tradeoffs so that we could decide how to move forward.",
+      "Nayeem was great to work with and did a fantastic job with the programming projects that were assigned. Nayeem took the time to research possible solutions and implemented them cleanly. Additionally, when something needed clarification or a change to the design was needed Nayeem clearly communicated the tradeoffs so that we could decide how to move forward.",
   },
 ];
 
@@ -1430,14 +1418,16 @@ function RecommendationsSection() {
 
 const certifications = [
   { name: "Google IT Automation with Python", issuer: "Google", date: "Apr 2025" },
-  { name: "Introduction to AI in Digital Marketing", issuer: "HubSpot", date: "Mar 2025" },
-  { name: "Configuration Management and the Cloud", issuer: "Google", date: "Jan 2025" },
+  { name: "AI/ML Geodata Analysis.", issuer: "Indian Space Research Organisation(ISRO)", date: "Mar 2025" },
+  { name: "Configuration Management and the Cloud", issuer: "Google", date: "Jan 2024" },
   { name: "Troubleshooting and Debugging Techniques", issuer: "Google", date: "Dec 2024" },
   { name: "Introduction to Git and GitHub", issuer: "Google", date: "Dec 2024" },
+  { name: "MATLAB Onramp", issuer: "MathWorks", date: "Dec 2024" },
+  { name: "Deep Learning onramp", issuer: "MathWorks", date: "Dec 2024" },
   { name: "Using Python to Interact with the Operating System", issuer: "Google", date: "Dec 2024" },
   { name: "Crash Course on Python", issuer: "Google", date: "Dec 2024" },
-  { name: "Stanford Science Small Groups — U-Net AI for Biomedical Image Segmentation", issuer: "Stanford University", date: "Nov 2024" },
-  { name: "Stanford CCOP Bootcamp — Certificate of Completion", issuer: "Stanford University", date: "Aug 2024" },
+  { name: "Goe Data Sharing and Cyber Security.", issuer: "Indian Space Research Organisation(ISRO)", date: "Nov 2024" },
+  { name: "Machine Learning with Python", issuer: "Coursera", date: "Aug 2024" },
   { name: "Stanford Fair for Community College Students", issuer: "Stanford University", date: "May 2025" },
   { name: "IRB Administration", issuer: "CITI Program", date: "Jun 2024" },
   { name: "Responsible Conduct of Research for Engineers", issuer: "CITI Program", date: "Jun 2024" },
@@ -1509,19 +1499,18 @@ function ContactSection() {
       <SectionHeading title="Get in Touch" icon={Mail} />
 
       <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-        I'm always open to discussing new opportunities, collaborations, or
-        just connecting. Feel free to reach out!
+        I'm open to Open To Internships, Entry-level RTL Design roles, Entry-level Design Verification roles, FPGA / ASIC implementation work and Hardware architecture and protocol design opportunities. Feel free to reach out!
       </p>
 
       <div className="flex flex-wrap items-center justify-center gap-4">
         <a href="mailto:alazzehheba@gmail.com" data-testid="link-contact-email">
           <Button className="gap-2">
             <Mail className="w-4 h-4" />
-            alazzehheba@gmail.com
+            nayeemhabib1232@gmail.com
           </Button>
         </a>
         <a
-          href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=heba-alazzeh"
+          href="https://www.linkedin.com/in/nayeemhabib12/"
           target="_blank"
           rel="noopener noreferrer"
           data-testid="link-contact-linkedin-follow"
@@ -1532,7 +1521,7 @@ function ContactSection() {
           </Button>
         </a>
         <a
-          href="https://github.com/hebaalazzeh"
+          href="https://github.com/Nayeemhabib"
           target="_blank"
           rel="noopener noreferrer"
           data-testid="link-contact-github"
@@ -1554,12 +1543,12 @@ function Footer() {
         <div className="flex items-center gap-2">
           <ArabesqueDecoration className="w-12 h-4 text-primary" />
           <span className="text-sm text-muted-foreground font-serif">
-            Heba Alazzeh
+            Nayeem Habib
           </span>
           <ArabesqueDecoration className="w-12 h-4 text-primary transform scale-x-[-1]" />
         </div>
         <p className="text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} Heba Alazzeh
+          &copy; {new Date().getFullYear()} Nayeem Habib. All rights reserved.
         </p>
       </div>
     </footer>
@@ -1576,8 +1565,8 @@ export default function Home() {
       <ExperienceSection />
       <ResearchSection />
       <ProjectsSection />
-      <LeadershipSection />
       <SkillsSection />
+      <LeadershipSection />
       <CertificationsSection />
       <RecommendationsSection />
       <ContactSection />

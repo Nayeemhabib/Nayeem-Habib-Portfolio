@@ -995,64 +995,22 @@ const leadershipItems = [
     description: "Led digital strategies to amplify presence within the tech community. Curated compelling content and fostered meaningful connections with students, faculty, and industry professionals.",
   },
   {
-    title: "12th Class — Operations Coordinator & Lead Instructor",
+    title: "Vice President Festember NIT Trichy - Quality Management Team.  ",
+    org: "National Institute of Technology, Tiruchirappalli (NIT Trichy)",
+    period: "Aug2020 - May 2023",
+    description: "Led the Quality Management Team, overseeing operational planning, process improvement, and cross-functional coordination. Managed a multidisciplinary student team to ensure efficient execution and high-quality standards across large-scale campus activities.",
+  },
+  {
+    title: "12TH Class — President to the School",
     org: "Govt Boys High School Baramulla, Jammu and Kashmir, India",
     period: "Dec 2023 - Jan 2025",
     description: "Developed and delivered STEM lessons covering UX/UI design, coding (Python beginner to advanced), game design, app design, and circuit design for K-12 students.",
   },
   {
-    title: "Harvard WECode Tech Fellow",
-    org: "Harvard WECode Conference",
-    period: "Jan 2025 - Feb 2025",
-    description: "Selected for a competitive fellowship at the world's largest student-run Women in Tech conference, engaging with industry leaders on cutting-edge technologies.",
-  },
-  {
-    title: "NVIDIA GTC Scholar",
-    org: "NVIDIA",
-    period: "Mar 2025",
-    description: "Selected for a sponsored opportunity to attend NVIDIA GTC, engaging with industry leaders and researchers on AI, machine learning, and accelerated computing.",
-  },
-  {
-    title: "Columbia EngAGE Scholar",
-    org: "Columbia University",
-    period: "Mar 2025",
-    description: "Accepted into Engineering Achievers in Graduate Education (engAGE), an exclusive program bringing together the brightest young minds in engineering and applied science.",
-  },
-  {
-    title: "Salesforce Futureforce Tech Accelerator",
-    org: "Salesforce",
-    period: "Jul 2025",
-    description: "Selected for a competitive 3-day accelerator focused on AI, automation, and human-AI collaboration with Salesforce technical leaders.",
-  },
-  {
-    title: "BNY Sophomore Summit Fellow",
-    org: "BNY",
-    period: "Apr 2025 - Jun 2025",
-    description: "Selected for a competitive six-week virtual program with senior leaders, tackling real-world challenges in the financial services industry.",
-  },
-  {
-    title: "ColorStack Stacked Up Summit Scholar",
-    org: "ColorStack",
-    period: "Jul 2025 - Aug 2025",
-    description: "Awarded scholarship to attend ColorStack's Stacked Up Summit, a selective conference supporting under-represented students in tech.",
-  },
-  {
-    title: "LinkedIn [In]spire Day Attendee (2x)",
-    org: "LinkedIn Women in Tech",
-    period: "Mar 2025 - Apr 2025",
-    description: "Chosen by LinkedIn's Women in Tech group for a selective professional development event with keynotes, AI-powered resume workshops, and mock interviews.",
-  },
-  {
-    title: "Liberty Mutual Women in Technology Summit",
-    org: "Liberty Mutual Insurance",
-    period: "Feb 2025 - Jun 2025",
-    description: "Attended an exclusive summit focused on advancing women in technology, fostering leadership, and promoting diversity in STEM.",
-  },
-  {
-    title: "MongoDB Women in CS Summit",
-    org: "MongoDB",
-    period: "Feb 2025 - May 2025",
-    description: "Attended a competitive summit for women in CS, exploring database technologies, software engineering best practices, and distributed computing.",
+    title: "10TH Class — Head Boy of the School",
+    org: "Govt Boys High School Chakloo Baramulla, Jammu and Kashmir, India",
+    period: "Dec 2014 - Jan 2016",
+    description: "Led the student council, organized school events, and represented student interests to the administration. Implemented initiatives to enhance student engagement and foster a positive school culture.",
   },
 ];
 
@@ -1417,8 +1375,29 @@ function RecommendationsSection() {
 }
 
 const certifications = [
-  { name: "Google IT Automation with Python", issuer: "Google", date: "Apr 2025" },
-  { name: "AI/ML Geodata Analysis.", issuer: "Indian Space Research Organisation(ISRO)", date: "Mar 2025" },
+  { 
+  name: "LeetCode Rank",
+  issuer: "LeetCode",
+  date: "Present",
+  link: "https://leetcode.com/u/NayeemHabib/",
+  points: [
+    "Solved 200+ Problems on LeetCode.",
+    "Global Rank: 45000 among 40M+ users.",
+    "Strong foundation in Arrays, Trees, Graphs, Dynamic Programming, and Algorithms.",
+  ],
+},
+  { 
+  name: "Code Force Rank",
+  issuer: "Code Force",
+  date: "Present",
+  link: "https://codeforces.com/profile/NayeemHabib",
+  points: [
+    "Solved 100+ Problems on Code Force.",
+    "Global Rank: 45000 among 40M+ users.",
+    "Strong foundation in Arrays, Trees, Graphs, Dynamic Programming, and Algorithms.",
+  ],
+},
+  { name: "AI/ML Geodata Analysis.", issuer: "Indian Space Research Organisation(ISRO)", date: "Mar 2022" },
   { name: "Configuration Management and the Cloud", issuer: "Google", date: "Jan 2024" },
   { name: "Troubleshooting and Debugging Techniques", issuer: "Google", date: "Dec 2024" },
   { name: "Introduction to Git and GitHub", issuer: "Google", date: "Dec 2024" },
@@ -1426,12 +1405,8 @@ const certifications = [
   { name: "Deep Learning onramp", issuer: "MathWorks", date: "Dec 2024" },
   { name: "Using Python to Interact with the Operating System", issuer: "Google", date: "Dec 2024" },
   { name: "Crash Course on Python", issuer: "Google", date: "Dec 2024" },
-  { name: "Goe Data Sharing and Cyber Security.", issuer: "Indian Space Research Organisation(ISRO)", date: "Nov 2024" },
+  { name: "Google Data Sharing and Cyber Security.", issuer: "Indian Space Research Organisation(ISRO)", date: "Nov 2024" },
   { name: "Machine Learning with Python", issuer: "Coursera", date: "Aug 2024" },
-  { name: "Stanford Fair for Community College Students", issuer: "Stanford University", date: "May 2025" },
-  { name: "IRB Administration", issuer: "CITI Program", date: "Jun 2024" },
-  { name: "Responsible Conduct of Research for Engineers", issuer: "CITI Program", date: "Jun 2024" },
-  { name: "Stanford Code in Place — Certificate of Completion", issuer: "Stanford / Code in Place", date: "Jun 2024" },
 ];
 
 function CertificationsSection() {
@@ -1443,7 +1418,7 @@ function CertificationsSection() {
       id="certifications"
       className="py-14 px-4 sm:px-6 max-w-6xl mx-auto"
     >
-      <SectionHeading title="Certifications" icon={Award} />
+      <SectionHeading title="Certification, Achievements & Awards" icon={Award} />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {visibleCerts.map((cert, idx) => (
@@ -1458,8 +1433,26 @@ function CertificationsSection() {
               <p className="font-medium text-sm leading-snug" data-testid={`text-certification-name-${idx}`}>{cert.name}</p>
               <div className="flex items-center justify-between mt-2">
                 <span className="text-xs text-primary">{cert.issuer}</span>
-                <span className="text-xs text-muted-foreground">{cert.date}</span>
+                {cert.date && <span className="text-xs text-muted-foreground">{cert.date}</span>}
               </div>
+              {cert.points && (
+                <ul className="list-disc list-inside mt-3 space-y-1 text-xs text-muted-foreground">
+                  {cert.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              )}
+              {cert.link && (
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 mt-3 text-xs text-primary hover:underline"
+                >
+                  <ExternalLink className="w-3 h-3" />
+                  {cert.link}
+                </a>
+              )}
             </Card>
           </motion.div>
         ))}

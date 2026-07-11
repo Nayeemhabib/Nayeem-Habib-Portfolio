@@ -728,7 +728,7 @@ function ExperienceSection() {
     </AnimatedSection>
   );
 }
-
+/*
 const researchItems = [
   {
     org: "Stanford Intelligent Systems Laboratory",
@@ -758,7 +758,8 @@ const researchItems = [
     github: "https://github.com/hebaalazzeh/Mineral-X-Subsurface-Vsualization-Tool",
   },
 ];
-
+*/
+/*
 function ResearchSection() {
   return (
     <AnimatedSection
@@ -841,7 +842,7 @@ function ResearchSection() {
     </AnimatedSection>
   );
 }
-
+*/
 
 const skillCategories = [
   {
@@ -1565,7 +1566,7 @@ function Footer() {
     </footer>
   );
 }
-
+// <ResearchSection />
 export default function Home() {
   return (
     <div className="min-h-screen bg-background dark">
@@ -1574,7 +1575,7 @@ export default function Home() {
       <AboutSection />
       <EducationSection />
       <ExperienceSection />
-      <ResearchSection />
+      
       <ProjectsSection />
       <SkillsSection />
       <LeadershipSection />

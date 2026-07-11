@@ -291,7 +291,7 @@ function Navbar() {
             </Button>
           </a>
           <a
-           href="/NayeemHabib.pdf"
+           href="/Nayeem-Habib-Portfolio/NayeemHabib.pdf"
            target="_blank"
            rel="noopener noreferrer"
            data-testid="link-resume-nav"

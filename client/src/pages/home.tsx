@@ -1172,10 +1172,18 @@ const projects = [
     link: "https://github.com/Nayeemhabib/Digital-Signal-Sampling-and-Analysis",
     linkLabel: "GitHub",
   },
-    {
+   {
+    title: "Circuit Delay Prediction for CMOS Timing Analysis",
+    description:
+      "Built and evaluated ML models (Linear Regression, Gradient Boosting) to predict CMOS inverter rise/fall/average delay across voltage corners, replacing expensive SPICE simulations for early-stage timing analysis.Achieved strong R² scores with Gradient Boosting via feature engineering and 5-fold cross-validation, reducing RMSE by ~28% over the baseline model.",
+    tags: ["Python", "Scikit-learn", "Machine Learning", "Matplotlib", "Pandas"],
+    link: "https://github.com/Nayeemhabib/Circuit-Delay-Prediction",
+    linkLabel: "GitHub",
+  },
+  {
     title: " VEHICLE TRACKING SYSTEM",
     description:
-      "Developed a GPS tracker using Arduino to transmit location data to mobile devices via a GSM module; successfully tested on more then 10 devices, with reliable performance over a distance of up to 1 km. Used Arduino UNO, GSM Module, GPS Module, Power Supply,Connecting Wires..",
+      "Developed a GPS tracker using Arduino to transmit location data to mobile devices via a GSM module; successfully tested on more then 10 devices, with reliable performance over a distance of up to 1 km. Used Arduino UNO, GSM Module, GPS Module, Power Supply,Connecting Wires.",
     tags: ["Python", "Arduino", "GSM", "GPS", "Embedded Systems"],
     link: "https://drive.google.com/file/d/1gFG2j1r95lRgZEo01tz8TKqjzIEvOSGE/view?usp=sharing",
     linkLabel: "Project Report",

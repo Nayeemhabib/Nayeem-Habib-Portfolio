@@ -1578,8 +1578,8 @@ export default function Home() {
       
       <ProjectsSection />
       <SkillsSection />
-      <LeadershipSection />
       <CertificationsSection />
+      <LeadershipSection />
       <RecommendationsSection />
       <ContactSection />
       <Footer />

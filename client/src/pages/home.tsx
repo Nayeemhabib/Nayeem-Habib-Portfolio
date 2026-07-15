@@ -1137,26 +1137,7 @@ function EducationSection() {
 }
 
 const projects = [
-  {
-    title: "TRAFFIC LIGHT MANAGEMENT USING AI",
-    description:[
-      "Developed a Simulation model of traffic light control system using AI With accuracy to 99 Percent.",
-      "Utilized computer vision techniques to determine time limits on roads. Used Python, Image Processing, Object Detection and TensorFlow.",
-    ],
-    tags: ["Python", "AI", "Computer Vision", "Image Processing", "TensorFlow"],
-    link: "https://github.com/Nayeemhabib/Traffic-Light-Management-Using-AI",
-    linkLabel: "GitHub",
-  },
-  {
-    title: "Face Recognition Biometric system",
-    description:[
-      " Developed a simulation model of face recognition biometric system. Used Python, Image Processing, Image Recognition, OpenCV, SciPy, SciKit.",
-    ],
-    tags: ["Python", "Computer Vision", "Image Processing", "OpenCV", "SciPy"],
-    link: "https://github.com/Nayeemhabib/Face_Recognition_Project",
-    linkLabel: "GitHub",
-  },
-  {
+   {
     title: "RLC filter Circuit Design and Analysis",
     description:
       "Developed a simulation model of an RLC filter circuit using Python, achieving an accuracy of up to 98 Percent. Analyzed over 100 configurations of RLC circuits to identify the optimal configuration. Used Python, NumPy, Matplotlib and SciPy..",
@@ -1164,7 +1145,8 @@ const projects = [
     link: "https://github.com/Nayeemhabib/Filter_Project",
     linkLabel: "GitHub",
   },
-  {
+
+    {
     title: "Digital-Signal-Sampling-and-Analysis",
     description:
       "Simulated DSP concepts such as sampling, aliasing, DFT, and signal reconstruction using MATLAB. Analyzed spectral resolution, frequency spectrum, and interpolation techniques for discrete-time signals. Validated Nyquist-Shannon sampling theory through practical signal processing experiments.",
@@ -1181,6 +1163,27 @@ const projects = [
     link: "https://github.com/Nayeemhabib/Circuit-Delay-Prediction",
     linkLabel: "GitHub",
   },
+  
+  {
+    title: "Face Recognition Biometric system",
+    description:[
+      " Developed a simulation model of face recognition biometric system. Used Python, Image Processing, Image Recognition, OpenCV, SciPy, SciKit.",
+    ],
+    tags: ["Python", "Computer Vision", "Image Processing", "OpenCV", "SciPy"],
+    link: "https://github.com/Nayeemhabib/Face_Recognition_Project",
+    linkLabel: "GitHub",
+  },
+  {
+    title: "TRAFFIC LIGHT MANAGEMENT USING AI",
+    description:[
+      "Developed a Simulation model of traffic light control system using AI With accuracy to 99 Percent.",
+      "Utilized computer vision techniques to determine time limits on roads. Used Python, Image Processing, Object Detection and TensorFlow.",
+    ],
+    tags: ["Python", "AI", "Computer Vision", "Image Processing", "TensorFlow"],
+    link: "https://github.com/Nayeemhabib/Traffic-Light-Management-Using-AI",
+    linkLabel: "GitHub",
+  }, 
+  
   {
     title: " VEHICLE TRACKING SYSTEM",
     description:
